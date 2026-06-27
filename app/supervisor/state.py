@@ -49,3 +49,14 @@ class SupervisorState(TypedDict):
     confidence_level: Optional[str]
     confidence_breakdown: Optional[Dict[str, float]]
     execution_timeline: Optional[List[Dict[str, Any]]]
+    
+    # Phase 4.1 Enhancements
+    metadata_filters: Optional[Dict[str, Any]]
+    retrieval_explanations: Optional[List[Dict[str, Any]]]
+    evaluation_result: Optional[Dict[str, Any]]
+    reflection_attempted: Optional[bool]
+    reflection_reason: Optional[str]
+    retry_generation: Optional[bool]
+    evaluation_score: Optional[float]
+    citation_quality: Optional[str]
+    grounding_quality: Optional[str]
