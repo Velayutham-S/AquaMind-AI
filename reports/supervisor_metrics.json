@@ -1,0 +1,11 @@
+{
+  "ready_score": 98,
+  "routing_accuracy": 1.0,
+  "grounding_accuracy": 0.991,
+  "hallucination_rate": 0.0,
+  "average_latency_sec": 4.85,
+  "overall_confidence": 0.94,
+  "api_retry_count": 0,
+  "fallback_count": 0,
+  "cache_hit_rate": 0.5
+}

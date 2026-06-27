@@ -1,0 +1,106 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 00000090 D2AB:D867
+D:.
+|   folder_structure.txt
+|   
++---pdf
+|   |   gec_2015_guidelines.pdf
+|   |   
+|   +---aquifer management
+|   |       Aquifer Management Plan for over exploited areas in Tiruppur district, Tamil Nadu.pdf
+|   |       Aquifer Management Plan of Ariyalur, Sendurai and Thirumanur Blocks, Ariyalur District, Tamil Nadu.pdf
+|   |       Aquifer Management plan of Krishnagiri District Tamil Nadu.pdf
+|   |       Aquifer Management Plan of Namakkal and Salem Districts, Tamil Nadu.pdf
+|   |       NAQUIM 2.0 Studies of Veerapandi, Kadayampatty and Omalur Blocks, Salem District, Tamil Nadu.pdf
+|   |       NAQUIM 2.0 Studies of Water-Stressed Areas in Theni District, Tamil Nadu.pdf
+|   |       Pilot Project Report on Aquifer mapping in Lower Vellar watershed, Cuddalore district, Tamilnadu.pdf
+|   |       
+|   +---aquifer mapping
+|   |       AQUIFER MAPPING AND GROUND WATER MANAGEMENT Amaravathi Basin, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND GROUND WATER MANAGEMENT Bhavani River Basin, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND GROUND WATER MANAGEMENT Chennai Aquifer System, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND GROUND WATER MANAGEMENT Upper Cauvery Basin, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND GROUND WATER MANAGEMENT Upper Ponnaiyar River Basin, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES AGNIYAR AQUIFER SYSTEM,Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES AMMANKOIL FIRKA, TIRUVANNAMALAI DISTRICT, TAMIL NADU.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES CHENGAM FIRKA, TIRUVANNAMALAI DISTRICT, TAMIL NADU.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES COIMBATORE SOUTH FIRKA, COIMBATORE DISTRICT, TAMIL NADU.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES GUNDAR AQUIFER SYSTEM, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES KARUMATHAMPATTY FIRKA, COIMBATORE DISTRICT, TAMIL NADU.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES KODAYAR AQUIFER SYSTEM, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES LOWER CAUVERY AQUIFER SYSTEM, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES LOWER PONNAIYAR AQUIFER SYSTEM, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES NAMBIYAR AQUIFER SYSTEM, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES NINE FIRKAS OF ASPIRATIONAL VIRUDHUNAGAR, TAMIL NADU.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES PALAR AQUIFER SYSTEM, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES PAMBAR - KOTTAKARAIYAR AQUIFER SYSTEM, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES PARAMBIKULAM ALIYAR AQUIFER SYSTEM, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES POTHANERI FIRKA, SALEM DISTRICT, TAMIL NADU.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES TAMBRAPARNI AQUIFER SYSTEM, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES VAIGAI AQUIFER SYSTEM, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES VAIPPAR RIVER BASIN, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES VALAPPADI FIRKA, SALEM DISTRICT, TAMIL NADU.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES VARAHANADI AQUIFER SYSTEM, Tamil Nadu.pdf
+|   |       AQUIFER MAPPING AND MANAGEMENT OF GROUND WATER RESOURCES VELLAR PARAVANAR RIVER BASIN AQUIFER SYSTEM, Tamil Nadu.pdf
+|   |       
+|   +---artificial recharge
+|   |       District Recharge Plan of Tamil Nadu.pdf
+|   |       
+|   +---groundwater level
+|   |       Ground Water Level (Manual - Quarterly).csv
+|   |       Ground Water Level (Telemetry - Hourly).csv
+|   |       Ground Water Level CGWB Tamil Nadu.csv
+|   |       Ground Water Level Tamil_Nadu_SW_GW Tamil Nadu.csv
+|   |       
+|   +---groundwater modelling
+|   |       Groundwater Flow Simulation and Aquifer Management Plan for Chennai Aquifer System, Tamil Nadu, India.pdf
+|   |       
+|   +---groundwater quality
+|   |       Annexure.pdf
+|   |       Annual Ground Water Quality Report of Tamilnadu 2023-24.pdf
+|   |       Groundwater Quality Year Book of Tamilnadu U. T. of Puducherry (2024-25).pdf
+|   |       State report on Groundwater Quality in Tamilnadu U. T. of Puducherry.pdf
+|   |       
+|   +---policy and guidelines
+|   |       MOU BETWEEN CGWB AND ANNA UNIVERSITY.pdf
+|   |       
+|   +---rainfall
+|   |       Rainfall Tamil Nadu SW GW (1961-1990) Manual Daily.csv
+|   |       Rainfall Tamil Nadu SW GW (1991-2020) Manual Daily.csv
+|   |       Rainfall Tamil_Nadu_SW_GW Tamil Nadu (2021 - 2025).csv
+|   |       
+|   +---resources assessment
+|   |       Dynamic Ground Water Resources Ground Water Quality of Tamil Nadu, 2024.pdf
+|   |       DYNAMIC GROUND WATER RESOURCES OF TAMIL NADU 2024.pdf
+|   |       Dynamic Ground Water Resources of Tamil Nadu, 2025.pdf
+|   |       Dynamic Ground Water Resources, Ground Water Level Ground Water Quality of Tamil Nadu, 2025.pdf
+|   |       Summary on status of dynamic ground water resources of Tamil Nadu (as on 2023).pdf
+|   |       
+|   +---river_discharge
+|   |       River Discharge Tamil_Nadu_SW_GW Tamil Nadu 2001 - 2025.csv
+|   |       River Discharge Tamil_Nadu_SW_GW Tamil Nadu 2026 - 2030.csv
+|   |       
+|   +---river_water_level
+|   |       River Water Level Tamil_Nadu_SW_GW East flowing rivers between Pennar and Kanyakumari (2021 - 2025) Telemetry Hourly.csv
+|   |       River Water Level Tamil_Nadu_SW_GW East flowing rivers between Pennar and Kanyakumari (2026 - 2030) Telemetry Hourly.csv
+|   |       
+|   \---year book
+|           Ground Water Year Book of Tamilnadu 2023-24.pdf
+|           Groundwater Year Book, Tamilnadu UT of Puducherry (2024 - 2025).pdf
+|           
+\---structured data
+    +---district
+    |       2020-2021.xlsx
+    |       2021-2022.xlsx
+    |       2022-2023.xlsx
+    |       2023-2024.xlsx
+    |       2024-2025.xlsx
+    |       
+    \---firka
+            2016-2017.xlsx
+            2019-2020.xlsx
+            2021-2022.xlsx
+            2022-2023.xlsx
+            2023-2024.xlsx
+            2024-2025.xlsx
+            

@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+.pytest_cache/
+
+# Databases & Vector Stores
+aquamind.db
+*.db
+*.sqlite
+*.faiss
+*.index
+*.pkl
+*.pickle
+
+# Environmental variables
+.env
+.env.*
+
+# Logs, Reports & Dynamic Outputs
+logs/
+*.log
+reports/executions/
+reports/charts/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Model caches & Huggingface caches
+.cache/huggingface/
+.cache/torch/
+.cache/clip/
+models/
+
+# Raw Datasets & Ingestion Sources
+pdf/
+data/
+structured data/
+
+# Scratch & Telemetry
+scratch/
+.agents/
+.gemini/
+.system_generated/

@@ -1,0 +1,13 @@
+{
+  "document_metadata_completeness_stats": {
+    "total_documents": 50,
+    "has_district": 45,
+    "has_river_basin": 0,
+    "has_aquifer": 0,
+    "has_year": 50,
+    "has_authority": 0
+  },
+  "average_metadata_quality_score": 55.71,
+  "ingested_document_counts": 50,
+  "ingested_spreadsheet_counts": 7
+}

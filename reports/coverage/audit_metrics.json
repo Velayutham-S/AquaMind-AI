@@ -1,0 +1,79 @@
+{
+  "ocr_quality_verification": {
+    "average_ocr_confidence": 0.9596,
+    "unreadable_pages_count": 225,
+    "ocr_failure_percentage": 3.54,
+    "table_extraction_success": 5134
+  },
+  "primary_verification": {
+    "total_pdf_files_in_directory": 53,
+    "successfully_processed_pdfs": 53,
+    "failed_pdfs": 0,
+    "failed_pdfs_list": [],
+    "total_pages": 6349,
+    "ocr_pages_count": 6349,
+    "extracted_tables": 5134,
+    "total_chunks": 21176,
+    "average_chunk_size_words": 109.1,
+    "duplicate_chunks": 363,
+    "corrupted_files": []
+  },
+  "structured_verification": {
+    "total_district_records": 189,
+    "total_firka_records": 7235,
+    "total_monitoring_records": 6554892,
+    "invalid_coordinates_count": 0,
+    "null_values_in_assessments": 0,
+    "duplicate_district_year_records": 0,
+    "schema_normalised": true
+  },
+  "metadata_verification": {
+    "total_pdfs_audited": 53,
+    "field_completeness_percentages": {
+      "document_id": 100.0,
+      "title": 100.0,
+      "source": 100.0,
+      "category": 100.0,
+      "year": 100.0,
+      "district": 88.68,
+      "taluk": 0.0,
+      "firka": 0.0,
+      "village": 0.0,
+      "river_basin": 13.21,
+      "watershed": 0.0,
+      "aquifer": 39.62,
+      "language": 100.0,
+      "page_number": 0.0,
+      "created_at": 100.0,
+      "checksum": 100.0,
+      "embedding_model": 100.0,
+      "version": 100.0
+    },
+    "overall_metadata_completeness_score": 63.42,
+    "missing_fields": [
+      "district",
+      "taluk",
+      "firka",
+      "village",
+      "river_basin",
+      "watershed",
+      "aquifer",
+      "page_number"
+    ]
+  },
+  "mapping_verification": {
+    "total_village_masters": 2328,
+    "missing_village_firka_mappings": 0,
+    "missing_village_taluk_mappings": 0,
+    "missing_village_district_mappings": 0,
+    "mapping_completeness_score": 100.0,
+    "ambiguous_mappings": []
+  },
+  "knowledge_graph_verification": {
+    "node_count": 6939,
+    "edge_count": 14474,
+    "isolated_nodes_count": 1648,
+    "duplicate_edges_count": 0,
+    "relationship_density": 2.09
+  }
+}

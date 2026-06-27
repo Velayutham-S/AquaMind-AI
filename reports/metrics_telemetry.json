@@ -1,0 +1,578 @@
+[
+  {
+    "session_id": "test_integration_session",
+    "timestamp": 1782491308.5380478,
+    "metrics": {
+      "total_latency": 2.521825075149536,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 1.0
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_integration_session",
+    "timestamp": 1782491357.5671258,
+    "metrics": {
+      "total_latency": 2.311471462249756,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 1.0
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_integration_session",
+    "timestamp": 1782491397.4152277,
+    "metrics": {
+      "total_latency": 2.553494930267334,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 1.0
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_0",
+    "timestamp": 1782491622.8996263,
+    "metrics": {
+      "total_latency": 4.776319742202759,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 1.0
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_2",
+    "timestamp": 1782491664.0187697,
+    "metrics": {
+      "total_latency": 45.898239850997925,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "KnowledgeAgent"
+      ],
+      "confidence_score": 0.92
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_4",
+    "timestamp": 1782491665.5809107,
+    "metrics": {
+      "total_latency": 47.452271461486816,
+      "intent": "General AI",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "KnowledgeAgent"
+      ],
+      "confidence_score": 0.92
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_3",
+    "timestamp": 1782491666.410034,
+    "metrics": {
+      "total_latency": 48.28792643547058,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "KnowledgeAgent"
+      ],
+      "confidence_score": 0.92
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_1",
+    "timestamp": 1782491673.4636521,
+    "metrics": {
+      "total_latency": 55.34701728820801,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "KnowledgeAgent"
+      ],
+      "confidence_score": 0.92
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_integration_session",
+    "timestamp": 1782491740.5555582,
+    "metrics": {
+      "total_latency": 2.4542787075042725,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 1.0
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "hallucination_eval_913",
+    "timestamp": 1782491793.1666205,
+    "metrics": {
+      "total_latency": 3.7355539798736572,
+      "intent": "Structured Data",
+      "language": "mixed",
+      "cache_hit": false,
+      "agents_called": [
+        "DataAgent",
+        "AnalyticsAgent"
+      ],
+      "confidence_score": 0.94
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "hallucination_eval_205",
+    "timestamp": 1782491818.249178,
+    "metrics": {
+      "total_latency": 2.5137975215911865,
+      "intent": "Groundwater Assessment",
+      "language": "mixed",
+      "cache_hit": false,
+      "agents_called": [
+        "DataAgent",
+        "AnalyticsAgent"
+      ],
+      "confidence_score": 0.94
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "hallucination_eval_2254",
+    "timestamp": 1782491826.392252,
+    "metrics": {
+      "total_latency": 4.721972942352295,
+      "intent": "Groundwater Status",
+      "language": "mixed",
+      "cache_hit": false,
+      "agents_called": [
+        "DataAgent",
+        "AnalyticsAgent"
+      ],
+      "confidence_score": 0.94
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_integration_session",
+    "timestamp": 1782493498.0449188,
+    "metrics": {
+      "total_latency": 30.40229606628418,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 1.0
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_2",
+    "timestamp": 1782493627.6039164,
+    "metrics": {
+      "total_latency": 45.41608738899231,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 1.0
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_4",
+    "timestamp": 1782493627.6143203,
+    "metrics": {
+      "total_latency": 45.424914598464966,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 1.0
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_3",
+    "timestamp": 1782493627.619047,
+    "metrics": {
+      "total_latency": 45.42681646347046,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 1.0
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_0",
+    "timestamp": 1782493627.6227686,
+    "metrics": {
+      "total_latency": 45.43793487548828,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 1.0
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_1",
+    "timestamp": 1782493627.6697347,
+    "metrics": {
+      "total_latency": 45.48401689529419,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 1.0
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_memory_session_id",
+    "timestamp": 1782534448.0741234,
+    "metrics": {
+      "total_latency": 9.5710608959198,
+      "intent": "Groundwater Level Inquiry",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "DataAgent",
+        "AnalyticsAgent"
+      ],
+      "confidence_score": 0.94
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_memory_session_id",
+    "timestamp": 1782534454.6562212,
+    "metrics": {
+      "total_latency": 1.099276065826416,
+      "intent": "forecast",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "PredictionAgent"
+      ],
+      "confidence_score": 0.75
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_memory_session_id",
+    "timestamp": 1782536565.319403,
+    "metrics": {
+      "total_latency": 6.530746698379517,
+      "intent": "Groundwater Level Inquiry",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "DataAgent",
+        "AnalyticsAgent"
+      ],
+      "confidence_score": 0.94
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_memory_session_id",
+    "timestamp": 1782536575.895395,
+    "metrics": {
+      "total_latency": 1.4138212203979492,
+      "intent": "forecast",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "PredictionAgent"
+      ],
+      "confidence_score": 0.75
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_memory_session_id",
+    "timestamp": 1782536845.5609932,
+    "metrics": {
+      "total_latency": 5.345752954483032,
+      "intent": "Groundwater Level Inquiry",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "DataAgent",
+        "AnalyticsAgent"
+      ],
+      "confidence_score": 0.94
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_memory_session_id",
+    "timestamp": 1782536851.7584383,
+    "metrics": {
+      "total_latency": 2.332759380340576,
+      "intent": "forecast",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "PredictionAgent"
+      ],
+      "confidence_score": 0.75
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "general_session_verify",
+    "timestamp": 1782536858.994716,
+    "metrics": {
+      "total_latency": 4.454706430435181,
+      "intent": "Structured Data",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "KnowledgeAgent"
+      ],
+      "confidence_score": 0.92
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_streaming_session",
+    "timestamp": 1782550828.550021,
+    "metrics": {
+      "total_latency": 6.554728746414185,
+      "intent": "structured data",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "DataAgent"
+      ],
+      "confidence_score": 0.98
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_streaming_session",
+    "timestamp": 1782550890.1295872,
+    "metrics": {
+      "total_latency": 0.6133487224578857,
+      "intent": "structured data",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "DataAgent"
+      ],
+      "confidence_score": 0.98
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_streaming_session",
+    "timestamp": 1782550955.0382602,
+    "metrics": {
+      "total_latency": 0.6116230487823486,
+      "intent": "structured data",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "DataAgent"
+      ],
+      "confidence_score": 0.98
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_integration_session",
+    "timestamp": 1782550997.664489,
+    "metrics": {
+      "total_latency": 2.6687703132629395,
+      "intent": "General AI",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 0.95
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_integration_session",
+    "timestamp": 1782551114.7055724,
+    "metrics": {
+      "total_latency": 35.25207829475403,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 0.95
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_integration_session",
+    "timestamp": 1782551201.1628213,
+    "metrics": {
+      "total_latency": 25.907788276672363,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 1.0
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_streaming_session",
+    "timestamp": 1782554795.8194342,
+    "metrics": {
+      "total_latency": 0.025632143020629883,
+      "intent": "structured data",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "DataAgent"
+      ],
+      "confidence_score": 0.32666666666666666
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "test_integration_session",
+    "timestamp": 1782554837.9424045,
+    "metrics": {
+      "total_latency": 20.69741702079773,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 1.0
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_2",
+    "timestamp": 1782554870.420734,
+    "metrics": {
+      "total_latency": 10.69395136833191,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": true,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 0.95
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_1",
+    "timestamp": 1782554870.4294152,
+    "metrics": {
+      "total_latency": 10.704637289047241,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": true,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 0.95
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_4",
+    "timestamp": 1782554870.5490003,
+    "metrics": {
+      "total_latency": 10.81735873222351,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": true,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 0.95
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_0",
+    "timestamp": 1782554870.5624752,
+    "metrics": {
+      "total_latency": 10.860251188278198,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": true,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 0.95
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_3",
+    "timestamp": 1782554872.3017848,
+    "metrics": {
+      "total_latency": 12.572840452194214,
+      "intent": "greeting",
+      "language": "en",
+      "cache_hit": true,
+      "agents_called": [
+        "GeneralAgent"
+      ],
+      "confidence_score": 0.95
+    },
+    "system_stats": {}
+  }
+]
