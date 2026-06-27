@@ -574,5 +574,50 @@
       "confidence_score": 0.95
     },
     "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_10_0",
+    "timestamp": 1782556836.0558565,
+    "metrics": {
+      "total_latency": 0.5380544662475586,
+      "intent": "data",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "DataAgent"
+      ],
+      "confidence_score": 0.9933333333333333
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_10_7",
+    "timestamp": 1782556836.1034305,
+    "metrics": {
+      "total_latency": 0.5663285255432129,
+      "intent": "data",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "DataAgent"
+      ],
+      "confidence_score": 0.9933333333333333
+    },
+    "system_stats": {}
+  },
+  {
+    "session_id": "stress_session_10_8",
+    "timestamp": 1782556836.449125,
+    "metrics": {
+      "total_latency": 0.9022998809814453,
+      "intent": "data",
+      "language": "en",
+      "cache_hit": false,
+      "agents_called": [
+        "DataAgent"
+      ],
+      "confidence_score": 0.9933333333333333
+    },
+    "system_stats": {}
   }
-]
+]]
