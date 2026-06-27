@@ -47,13 +47,47 @@ class TestSupervisorStress(unittest.TestCase):
                     "error": str(e)
                 }
 
+        from unittest.mock import patch
+        mock_plan = {
+            "intent": "general",
+            "reasoning": ["Mocked planner response"],
+            "language": "English",
+            "entities": {},
+            "agents": ["GeneralAgent"],
+            "tools": [],
+            "response_type": "text",
+            "confidence": 0.95
+        }
+        mock_eval = {
+            "routing_accuracy": 1.0,
+            "retrieval_precision": 1.0,
+            "grounding_score": 1.0,
+            "citation_accuracy": 1.0,
+            "hallucination_detected": False,
+            "language_accuracy": 1.0,
+            "summary": "Mocked validation output summary."
+        }
+        
+        def mock_call_json(prompt, system_prompt=None):
+            if system_prompt and "Auditor" in system_prompt:
+                return mock_eval
+            return mock_plan
+
+        def mock_call(prompt, system_prompt=None, json_mode=False):
+            import json
+            if json_mode:
+                return json.dumps(mock_call_json(prompt, system_prompt))
+            return "Mocked general response text"
+
         start_all = time.time()
         results = []
         
-        with concurrent.futures.ThreadPoolExecutor(max_workers=concurrency) as executor:
-            futures = [executor.submit(run_single_request, i) for i in range(concurrency)]
-            for future in concurrent.futures.as_completed(futures):
-                results.append(future.result())
+        with patch("app.agents.llm.LLMService.call_json", side_effect=mock_call_json):
+            with patch("app.agents.llm.LLMService.call", side_effect=mock_call):
+                with concurrent.futures.ThreadPoolExecutor(max_workers=concurrency) as executor:
+                    futures = [executor.submit(run_single_request, i) for i in range(concurrency)]
+                    for future in concurrent.futures.as_completed(futures):
+                        results.append(future.result())
 
         total_duration = time.time() - start_all
         

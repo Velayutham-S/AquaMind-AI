@@ -93,7 +93,42 @@ class TestSupervisorAgent(unittest.TestCase):
             "evaluation": None
         }
         
-        out = agent_graph.invoke(state_input)
+        from unittest.mock import patch
+        mock_plan = {
+            "intent": "general",
+            "reasoning": ["Mocked planner response"],
+            "language": "English",
+            "entities": {},
+            "agents": ["GeneralAgent"],
+            "tools": [],
+            "response_type": "text",
+            "confidence": 0.95
+        }
+        mock_eval = {
+            "routing_accuracy": 1.0,
+            "retrieval_precision": 1.0,
+            "grounding_score": 1.0,
+            "citation_accuracy": 1.0,
+            "hallucination_detected": False,
+            "language_accuracy": 1.0,
+            "summary": "Mocked validation output summary."
+        }
+        
+        def mock_call_json(prompt, system_prompt=None):
+            if system_prompt and "Auditor" in system_prompt:
+                return mock_eval
+            return mock_plan
+
+        def mock_call(prompt, system_prompt=None, json_mode=False):
+            import json
+            if json_mode:
+                return json.dumps(mock_call_json(prompt, system_prompt))
+            return "Mocked general response text"
+
+        with patch("app.agents.llm.LLMService.call_json", side_effect=mock_call_json):
+            with patch("app.agents.llm.LLMService.call", side_effect=mock_call):
+                out = agent_graph.invoke(state_input)
+                
         self.assertIn("supervisor", out["routing_history"])
         self.assertIn("general", out["routing_history"])
         self.assertIn("synthesize", out["routing_history"])
