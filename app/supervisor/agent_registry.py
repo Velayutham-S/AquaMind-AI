@@ -15,7 +15,7 @@ class AgentRegistry:
         
         # Hardcoded list of agents to load dynamically
         agent_modules = {
-            "KnowledgeAgent": ("app.agents.knowledge", "KnowledgeAgent"),
+            "KnowledgeAgent": ("app.agents.knowledge_agent", "KnowledgeAgent"),
             "DataAgent": ("app.agents.data_agent", "DataAgent"),
             "PredictionAgent": ("app.agents.prediction", "PredictionAgent"),
             "SimulationAgent": ("app.agents.simulation", "SimulationAgent"),

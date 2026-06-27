@@ -150,9 +150,12 @@ class SupervisorAgent:
         routing_history = route_info["routing_history"]
 
         # Append execution plan agents to routing history if running inside execution engine
-        if len(plan_agents) > 1:
+        if len(plan_agents) >= 1:
             for a in plan_agents:
-                routing_history.append(a.lower().replace("agent", ""))
+                if a != "GeneralAgent":
+                    name_clean = a.lower().replace("agent", "")
+                    if name_clean not in routing_history:
+                        routing_history.append(name_clean)
                 
         route_dur = (time.time() - route_start) * 1000.0
         execution_timeline.append({

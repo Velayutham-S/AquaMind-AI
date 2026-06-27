@@ -3,7 +3,7 @@ from app.agents.state import AgentState
 from app.agents.supervisor import SupervisorAgent
 from app.agents.general import GeneralAgent
 from app.agents.data import DataAgent
-from app.agents.knowledge import KnowledgeAgent
+from app.agents.knowledge_agent import KnowledgeAgent
 from app.agents.analytics import AnalyticsAgent
 from app.agents.prediction import PredictionAgent
 from app.agents.simulation import SimulationAgent
