@@ -73,11 +73,56 @@ class KnowledgeAgentReport:
 | GPU Delta | {metrics.get('gpu_delta_mb', 0.0):.2f} MB |
 """
         
+        # Phase 4.1 additions: Metadata Filters, Retrieval explanations, Evaluation details, Reflection
+        filters = data.get("metadata_filters") or {}
+        filters_str = "\n".join([f"- **{k}**: `{v}`" for k, v in filters.items()]) if filters else "*No filters applied.*"
+
+        exps = data.get("retrieval_explanations") or []
+        exp_rows = []
+        for e in exps:
+            entities_str = ", ".join(e.get("matched_entities", [])) or "None"
+            exp_rows.append(
+                f"| {e.get('rank')} | {e.get('document')} | {e.get('similarity_score', 0.0):.3f} | "
+                f"{e.get('bm25_score', 0.0):.2f} | {e.get('cross_encoder_score', 0.0):.2f} | "
+                f"{entities_str} | {e.get('reason_selected')} |"
+            )
+        explanations_table = (
+            "| Rank | Document | Sim Score | BM25 Score | CE Score | Matched Entities | Selection Reason |\n"
+            "|---|---|---|---|---|---|---|\n" + "\n".join(exp_rows)
+        ) if exp_rows else "*No explanations compiled.*"
+
+        eval_score = data.get("evaluation_score", 1.0)
+        eval_result = data.get("evaluation_result") or {}
+        missing_topics = ", ".join(eval_result.get("missing_topics", [])) or "None"
+        missing_entities = ", ".join(eval_result.get("missing_entities", [])) or "None"
+        contradictions = ", ".join(eval_result.get("contradictions", [])) or "None"
+        
+        eval_summary = f"""
+- **Answer Evaluator Score**: `{eval_score:.2f}` (Quality rating: {data.get('grounding_quality', 'HIGH')})
+- **Answer Completeness**: `{eval_result.get('answer_complete', True)}`
+- **Citation Quality**: `{eval_result.get('citation_quality', 'HIGH')}`
+- **Grounding Quality**: `{eval_result.get('grounding_quality', 'HIGH')}`
+- **Identified Missing Topics**: `{missing_topics}`
+- **Identified Missing Entities**: `{missing_entities}`
+- **Identified Contradictions**: `{contradictions}`
+"""
+
+        reflection_attempted = data.get("reflection_attempted", False)
+        reflection_reason = data.get("reflection_reason", "N/A")
+        retry_generation = data.get("retry_generation", False)
+        
+        reflection_summary = f"""
+- **Self-Reflection Attempted**: `{reflection_attempted}`
+- **Reflection Trigger Reason**: `{reflection_reason}`
+- **Expanded Retry Generation Executed**: `{retry_generation}`
+"""
+
         mermaid_graph = """```mermaid
 graph TD
     User([User Query]) --> Rewrite[Query Rewriter]
     Rewrite --> Multi[Multi-Query Generator]
-    Multi --> Retrieve[Retrieval Orchestrator]
+    Multi --> Filter[Metadata Filter]
+    Filter --> Retrieve[Retrieval Orchestrator]
     Retrieve --> Dense[Dense: FAISS Index]
     Retrieve --> Sparse[Sparse: BM25 Index]
     Retrieve --> Graph[Knowledge Graph Lookup]
@@ -85,11 +130,18 @@ graph TD
     Sparse --> Ranker
     Graph --> Ranker
     Ranker --> Reranker[Cross-Encoder Reranker]
-    Reranker --> Compressor[Context Compressor]
+    Reranker --> Explainer[Retrieval Explainer]
+    Explainer --> Compressor[Context Compressor]
     Compressor --> Ground[Grounding Auditor]
-    Ground --> Citations[Citation Builder]
-    Citations --> Synthesizer[LLM Synthesizer]
-    Synthesizer --> End([Final grounded Answer])
+    Ground --> Evaluator[Answer Evaluator]
+    Evaluator --> Generate[LLM Synthesizer]
+    Generate --> Check{Quality Score >= 0.90?}
+    Check -- Yes --> Citations[Citation Builder]
+    Check -- No (First Try) --> Reflect[Self-Reflection Retry]
+    Reflect --> Retrieve
+    Check -- No (Second Try) --> Warning[Confidence Warning]
+    Warning --> Citations
+    Citations --> End([Final Answer])
 ```"""
 
         report_md = f"""# Knowledge Agent RAG Execution Report - {timestamp}
@@ -101,30 +153,39 @@ Session ID: `{session_id}`
 - **Multi-Query Expansions**:
 {alt_queries}
 
-## 2. Execution Timeline
+## 2. Inferred Metadata Filters
+{filters_str}
+
+## 3. Execution Timeline
 ```
 {timeline_str}
 ```
 
-## 3. Retrieval Candidate Rerank Details
-{candidates_table}
+## 4. Retrieval Chunk Selection Explanations
+{explanations_table}
 
-## 4. Grounding Fact Verification Audit
+## 5. Grounding Fact Verification Audit
 - **Grounding Validation Score**: `{data.get('grounding_score', 0.0):.2f}`
 {assertions_table}
 
-## 5. Citations Table
+## 6. Answer Evaluator Quality Audit
+{eval_summary}
+
+## 7. Self-Reflection & Retry Metrics
+{reflection_summary}
+
+## 8. Citations Table
 {citations_table}
 
-## 6. Confidence Breakdown
+## 9. Confidence Breakdown
 - **Overall Confidence**: `{overall_conf:.2f}` (**{conf_level}**)
 - **Component Factor Scores**:
 {breakdown_str}
 
-## 7. Metrics Telemetry
+## 10. Metrics Telemetry
 {metrics_table}
 
-## 8. RAG Pipeline Execution Graph
+## 11. RAG Pipeline Execution Graph
 {mermaid_graph}
 """
         
